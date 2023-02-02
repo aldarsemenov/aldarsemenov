@@ -1,0 +1,76 @@
+
+	.text {
+        background-color: red;
+        color: white;
+}
+    .text2 {
+        background-color: green;
+}
+	.inline {
+        display: inline-block;
+        color: gold;
+}
+    .r {
+        font-style: italic;
+        color: purple;
+}
+    .b {
+        font: 30px arial;
+        color : gray;
+}	
+    .invis{
+        display:none;
+}
+    .flex-container {
+        display: flex;
+        font-size: 20px;
+        width:200px;
+        line-height:75px;
+        flex-direction: row-reverse;
+}
+    .item {
+        border: 1px solid red;
+        padding: 5px;
+}
+    .pos{
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+}
+    .sdvig{
+        position: relative;
+        top: 10px;
+	
+}
+    .flex-container {
+        display: flex;
+        font-size: 20px;
+        width:200px;
+        line-height:75px;
+        flex-direction: row-reverse;
+}
+    .static{
+        position: absolute;
+        top: 400px;
+        left: 100px;
+}
+.layer1, .layer2, .layer3, .layer4 {
+    position: relative; 
+   } 
+   .layer1, .layer3 {
+    background:green;
+    color: white;
+    height:100px;
+    font-size:30px;
+   }
+   .layer2, .layer4 {
+    top: -55px; 
+    left: 10px; 
+    color: #ffa500;
+    font-size:70px;
+    background:purple
+   }
+   .layer1 { z-index: 2; }
+   .layer2 { z-index: 3; }
+   .layer3 { z-index: 5; }
+   .layer4 { z-index: 4; }
