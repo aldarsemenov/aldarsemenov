@@ -13,7 +13,5 @@ let biography =  `Меня зовут ${FIO}
 Мой возраст = ${2023-1995}
 Где я учился ${study}
 Хобби: ${hobby}
-Работа: ${job}
-
-`;
+Работа: ${job}`;
 console.log(biography);
