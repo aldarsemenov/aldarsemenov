@@ -1,5 +1,5 @@
 let pasta = {
-    ing1: 'makaron',
+   // ing1: 'makaron',
     ing2: 'cheese',
     ing3: 'milk',
     ing4:'chicken',
