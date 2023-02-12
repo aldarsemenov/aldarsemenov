@@ -46,7 +46,7 @@ console.log(dohod);
 
 
 //удаление данных с массива
-menu.shift(pasta,booza,buchler);
+menu.splice(0, 3);
 alert(menu)
 alert(dohod);
 
