@@ -1,5 +1,5 @@
 let pasta = {
-   // ing1: 'makaron',
+    ing1: 'makaron',
     ing2: 'cheese',
     ing3: 'milk',
     ing4:'chicken',
@@ -26,5 +26,5 @@ let buchler  = {  //бухлер
 
 let menu = [pasta,zharexa,booza,buchler];
 
-alert(menu[0]);
+alert(JSON.stringify(menu[0]));
 
