@@ -26,5 +26,5 @@ let buchler  = {  //бухлер
 
 let menu = [pasta,zharexa,booza,buchler];
 
-alert(buchler.ing1);
+alert(menu[0]);
 
