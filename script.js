@@ -11,7 +11,7 @@ if (question =="Рим") {
     alert('Ошибочка')
 }
 let question2 = prompt ('Назовите столицу Японии')
-if (question2 =="Япония") {
+if (question2 =="Токио") {
     alert('Верный ответ');
     schetchik++;
 } else {
@@ -19,19 +19,26 @@ if (question2 =="Япония") {
 }
 
 let question3 = prompt ('Назовите столицу Беларуси')
-if (question3 ="Минск") {
+if (question3 =="Минск") {
     alert('Верный ответ');
     schetchik++;
 } else {
     alert('Ошибочка')
 }
 let question4 = prompt('Назовите столицу Германии')
-if (question4 ="Берлин") {
+if (question4 =="Берлин") {
     alert('Верный ответ');
     schetchik++;
 } else {
     alert('Ошибочка')
 }
 
+let question5 = prompt('Назовите столицу Польши')
+if (question5 =="Варшава") {
+    alert('Верный ответ');
+    schetchik++;
+} else {
+    alert('Ошибочка')
+}
 
 alert('Количество правильных ответов = '+schetchik);
