@@ -54,7 +54,7 @@ for (i=0;
     {
         profit= menu[i].cost-menu[i].costPrice;
         
-        alert('Прибыль с единицы товара'profit);
+        alert('Прибыль с единицы товара'+profit);
         nomer=menu[i].length;
         menu[i].nomer=profit;
         alert(JSON.stringify(menu[i]));
