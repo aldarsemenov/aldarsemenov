@@ -9,11 +9,12 @@ if (i%2 ==0){
 //2 zadanie
 let j=0;
 while (true){
+    alert(j);
     if (j==5){
         break;
     }
     j++;
-    alert(j);
+    
 }
 alert(j);
 
