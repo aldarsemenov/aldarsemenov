@@ -58,9 +58,9 @@ for ( i=0;
     i++)
     {
         let profit= menu([i].cost)-menu([i].costPrice);
+        alert('vivod ceni ='+menu([i].cost));
         alert(profit);
         menu([i].length).push(profit);
     }
-
 
 alert('dlina menu'+menu.length);
