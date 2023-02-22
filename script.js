@@ -7,9 +7,9 @@ if (i%2 ==0){
 }
 
 //2 zadanie
-let j=0;
+let j=1;
 while (true){
-    alert(j);
+   
     if (j==5){
         break;
     }
