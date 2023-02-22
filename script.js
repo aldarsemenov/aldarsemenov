@@ -47,14 +47,13 @@ let buchler  = {
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
 
-alert('vivod ceni ='+JSON.stringify(menu[pasta.cost]));
 alert(menu[0.0]);
 for (i=0;
     i<menu.length;
     i++)
     {
-        let profit= menu({i}.cost)-menu({i}.costPrice);
-        alert('vivod ceni ='+menu({i}.cost));
+        let profit= menu[i.cost]-menu[i.costPrice];
+        alert('vivod ceni ='+menu[i.cost]);
         alert(profit);
         menu({i}.length).push(profit);
     }
