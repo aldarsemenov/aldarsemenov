@@ -17,7 +17,8 @@ while (true){
 alert('Количество итераций = '+j);
 
 
-
+alert('dlina menu'+menu.length);
+alert('321123');
 //3 zadanie
 
 
@@ -64,5 +65,3 @@ for (i=0;
         menu([i].length).push(profit);
     }
 
-alert('dlina menu'+menu.length);
-alert('321123');
