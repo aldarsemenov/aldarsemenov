@@ -1,11 +1,9 @@
 //1 zadanie
-
 for (let i=1;i<=10;i++) {
 if (i%2 ==0){
     alert('Четное число = '+i);
 }
 }
-
 //2 zadanie
 let j=1;
 while (true){
@@ -16,12 +14,7 @@ while (true){
 }
 alert('Количество итераций = '+j);
 
-
-
-alert('321123');
 //3 zadanie
-
-
 let pasta = {
     ing1: 'makaron',
     ing2: 'cheese',
@@ -53,8 +46,7 @@ let buchler  = {
 }
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
-
-alert('ddd');
+alert('dlina menu'+menu.length);
 for (i=0;
     i<menu.length;
     i++)
@@ -65,4 +57,4 @@ for (i=0;
         menu([i].length).push(profit);
     }
 
-    alert('dlina menu'+menu.length);
+   
