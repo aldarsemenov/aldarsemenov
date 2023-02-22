@@ -55,7 +55,8 @@ for (i=0;
         profit= menu[i].cost-menu[i].costPrice;
         alert('vivod ceni ='+menu[i].cost);
         alert(profit);
-        //menu[i.length].push(profit);
+        menu[i].push(profit);
+        alert(menu[i]);
     }
-alert('dsad');
+
    
