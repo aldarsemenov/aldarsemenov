@@ -48,6 +48,7 @@ let buchler  = {
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
 
 alert('vivod ceni ='+menu(pasta.cost));
+alert(menu[0]);
 for (i=0;
     i<menu.length;
     i++)
