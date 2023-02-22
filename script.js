@@ -54,7 +54,7 @@ let buchler  = {
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
 
-
+alert('ddd');
 for (i=0;
     i<menu.length;
     i++)
