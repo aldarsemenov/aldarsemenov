@@ -47,7 +47,7 @@ let buchler  = {
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
 let profit=0;
-let nomer=0;
+let raznica=0;
 for (i=0;
     i<menu.length;
     i++)
@@ -55,8 +55,8 @@ for (i=0;
         profit= menu[i].cost-menu[i].costPrice;
         
         alert('Прибыль с единицы товара = '+profit);
-        nomer=menu[i].length;
-        menu[i].nomer=profit;
+        raznica=menu[i].length;
+        menu[i].raznica=profit;
         alert(JSON.stringify(menu[i]));
     }
 
