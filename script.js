@@ -47,15 +47,16 @@ let buchler  = {
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
 let profit=0;
-
+let nomer=0;
 for (i=0;
     i<menu.length;
     i++)
     {
         profit= menu[i].cost-menu[i].costPrice;
-        alert('vivod ceni ='+menu[i].cost);
+        
         alert(profit);
-        menu[i].push(profit);
+        nomer=menu[i].length;
+        menu[i].nomer=profit;
         alert(menu[i]);
     }
 
