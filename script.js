@@ -2,9 +2,9 @@
 
 for (let i=1;i<=10;i++) {
 if (i%2 ==0){
-    alert(i);
+    alert('Четное число = 'i);
 }
-}
+}ы
 
 //2 zadanie
 let j=1;
@@ -14,7 +14,7 @@ while (true){
     }
     j++;
 }
-alert(j);
+alert('Количество итераций = 'j);
 
 
 
