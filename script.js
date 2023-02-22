@@ -59,7 +59,8 @@ for ( i=0;
     {
         let profit= menu([i].cost)-menu([i].costPrice);
         alert(profit);
+        menu([i].length).push(profit);
     }
 
 
-
+alert(menu.length);
