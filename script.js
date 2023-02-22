@@ -51,10 +51,10 @@ for (i=0;
     i<menu.length;
     i++)
     {
-        let profit= menu([i].cost)-menu([i].costPrice);
-        alert('vivod ceni ='+menu([i].cost));
+        let profit= menu({i}.cost)-menu({i}.costPrice);
+        alert('vivod ceni ='+menu({i}.cost));
         alert(profit);
-        menu([i].length).push(profit);
+        menu({i}.length).push(profit);
     }
 
    
