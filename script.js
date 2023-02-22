@@ -63,4 +63,4 @@ for ( i=0;
     }
 
 
-alert(menu.length);
+alert('dlina menu'+menu.length);
