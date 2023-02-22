@@ -4,7 +4,7 @@ for (let i=1;i<=10;i++) {
 if (i%2 ==0){
     alert('Четное число = '+i);
 }
-}ы
+}
 
 //2 zadanie
 let j=1;
@@ -53,7 +53,7 @@ let buchler  = {  //бухлер
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
 
 
-for ( i=0;
+for (i=0;
     i<menu.length;
     i++)
     {
