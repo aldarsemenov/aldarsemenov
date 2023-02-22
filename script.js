@@ -43,7 +43,8 @@ let  booza ={
     costPrice: 25,
     cost: 55
 }
-let buchler  = {  //бухлер
+let buchler  = { 
+     //бухлер
     ing1: 'beef',
     ing2: 'potato',
     costPrice: 100,
@@ -64,3 +65,4 @@ for (i=0;
     }
 
 alert('dlina menu'+menu.length);
+alert('321123');
