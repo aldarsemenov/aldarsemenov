@@ -46,16 +46,16 @@ let buchler  = {
 }
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
+let profit=0;
 
-alert(menu[0.0]);
 for (i=0;
     i<menu.length;
     i++)
     {
-        let profit= menu[i.cost]-menu[i.costPrice];
-        alert('vivod ceni ='+menu[i.cost]);
+        profit= menu[i].cost-menu[i].costPrice;
+        alert('vivod ceni ='+menu[i].cost);
         alert(profit);
-        menu({i}.length).push(profit);
+        //menu[i.length].push(profit);
     }
-
+alert('dsad');
    
