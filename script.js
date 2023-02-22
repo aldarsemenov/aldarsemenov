@@ -57,7 +57,7 @@ for (i=0;
         alert(profit);
         nomer=menu[i].length;
         menu[i].nomer=profit;
-        alert(menu[i]);
+        alert(json.stringify(menu[i]));
     }
 
    
