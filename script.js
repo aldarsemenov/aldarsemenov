@@ -62,35 +62,37 @@ for (i=0;
         alert(JSON.stringify(menu[i]));
     }
 // 3 *
-    let podjarka = [potato,farsh,onion];
-    let lagman = [makaron,potato,beef];
-    let pizza = [cheese,chicken,onion,testo];
+    let makaron =  10;
+    let cheese =  20;
+    let milk = 10;
+    let chicken =  30;
+    let potato =20;
+    let onion =  10;
+    let pork =  60;
+    let farsh = 20;
+    let testo =  5;
+    let beef = 80;
+    let podjarka = {
+        0:potato,
+        1:farsh,
+        2:onion,
+        cost:150 }
+    let lagman = {
+        0:makaron,
+        1:potato,
+        2:beef,
+        cost:200}
+    let pizza = {
+        0:cheese,
+        1:chicken,
+        2:onion,
+        3:testo,
+        cost:300}
     let menu2=[podjarka,lagman,pizza];
-    let price=[150,200,300];
     let ingr = [makaron,cheese,milk,chicken,potato,onion,pork,farsh,testo,beef];
     profit=0;
-    let makaron =  10;
-    
-    let cheese =  20;
-    
-    let milk = 10;
-    
-    let chicken =  30;
-    
-    let potato =20;
-    
-    let onion =  10;
-    
-    let pork =  60;
-    
-    let farsh = 20;
-    
-    let testo =  5;
-    
-    let beef = 80;
-    
-    
     let cena=0;
+
     for (i=0;i<menu2.length;i++){
         for (j=0;j<menu2[j].length;j++){
             for (k=0;k<ingr.length;k++){
@@ -101,7 +103,7 @@ for (i=0;
             }
         }
         alert('Цена блюда = '+cena);
-        profit= price[i]-cena;
+        profit= menu2[i].cost-cena;
         alert('Цена прибыли ='+profit);
         cena=0;
         profit=0;
