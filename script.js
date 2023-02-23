@@ -69,60 +69,40 @@ for (i=0;
     let price=[150,200,300];
     let ingr = [makaron,cheese,milk,chicken,potato,onion,pork,farsh,testo,beef];
     profit=0;
-    let makaron = {
-        name: 'makaron',
-        cost: 10
-    }
-    let cheese = {
-        name: 'cheese',
-        cost: 20
-    }
-    let milk = {
-        name: 'milk',
-        cost:10
-    }
-    let chicken = {
-        name: 'chicken',
-        cost: 30
-    }
-    let potato = {
-        name: 'potato',
-        cost: 20
-    }
-    let onion = {
-        name: 'onion',
-        cost: 10
-    }
-    let pork = {
-        name: 'pork',
-        cost: 60
-    }
-    let farsh = {
-        name: 'farsh',
-        cost:20
-    }
-    let testo = {
-        name: 'testo',
-        cost: 5
-    }
-    let beef = {
-        name: 'beef',
-        cost: 80
-    }
+    let makaron =  10;
+    
+    let cheese =  20;
+    
+    let milk = 10;
+    
+    let chicken =  30;
+    
+    let potato =20;
+    
+    let onion =  10;
+    
+    let pork =  60;
+    
+    let farsh = 20;
+    
+    let testo =  5;
+    
+    let beef = 80;
+    
     
     let cena=0;
     for (i=0;i<menu2.length;i++){
         for (j=0;j<menu2[j].length;j++){
             for (k=0;k<ingr.length;k++){
                 if (menu2[i][j]==ingr[k]){
-                    cena = cena+ingr[k].cost;
+                    cena = cena+ingr[k];
                     
                 }
             }
         }
         alert('Цена блюда = '+cena);
         profit= price[i]-cena;
-        alert('Цена прибыли ='+profit)
+        alert('Цена прибыли ='+profit);
         cena=0;
         profit=0;
     }
