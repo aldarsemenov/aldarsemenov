@@ -62,42 +62,27 @@ for (i=0;
         alert(JSON.stringify(menu[i]));
     }
 // 3 *
-    let makaron =  10;
-    let cheese =  20;
-    let milk = 10;
-    let chicken =  30;
-    let potato =20;
-    let onion =  10;
-    let pork =  60;
-    let farsh = 20;
-    let testo =  5;
-    let beef = 80;
+   
     let podjarka = {
-        0:potato,
-        1:farsh,
-        2:onion,
+        ing:['potato','farsh','onion'],
         cost:150 }
     let lagman = {
-        0:makaron,
-        1:potato,
-        2:beef,
+        ing:['makaron','potato','beef'],
         cost:200}
     let pizza = {
-        0:cheese,
-        1:chicken,
-        2:onion,
-        3:testo,
+        ing:['cheese','chicken','onion','testo'],
         cost:300}
     let menu2=[podjarka,lagman,pizza];
-    let ingr = [makaron,cheese,milk,chicken,potato,onion,pork,farsh,testo,beef];
+    let ingr = ['makaron','cheese','milk','chicken','potato','onion','pork','farsh','testo','beef'];
+    let price= [10,20,10,30,20,10,60,20,5,80];
     profit=0;
     let cena=0;
 
     for (i=0;i<menu2.length;i++){
         for (j=0;j<menu2[j].length;j++){
             for (k=0;k<ingr.length;k++){
-                if (menu2[i][j]==ingr[k]){
-                    cena = cena+ingr[k];
+                if (menu2[i].ing[j]===ingr[k]){
+                    cena = cena+price[k];
                     
                 }
             }
