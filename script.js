@@ -79,11 +79,10 @@ for (i=0;
     let cena=0;
 
     for (i=0;i<menu2.length;i++){
-        for (j=0;j<menu2.ing[j].length;j++){
+        for (j=0;j<menu2[i].ing.length;j++){
             for (k=0;k<ingr.length;k++){
                 if (menu2[i].ing[j]==ingr[k]){
                     cena = cena+price[k];
-                    alert("summa"+cena);
                 }
             }
         }
