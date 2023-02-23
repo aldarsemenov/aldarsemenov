@@ -46,6 +46,8 @@ let buchler  = {
 }
 
 let menu = [pasta,zharexa,booza,buchler]; // создание массива
+
+
 let profit=0;
 let raznica=0;
 for (i=0;
@@ -59,5 +61,61 @@ for (i=0;
         menu[i].raznica=profit;
         alert(JSON.stringify(menu[i]));
     }
+// 3 *
+    let ingr = [makaron,cheese,milk,chicken,potato,onion,pork,farsh,testo,beef];
+    
+    let makaron = {
+        name: 'makaron',
+        cost: 10
+    }
+    let cheese = {
+        name: 'cheese',
+        cost: 20
+    }
+    let milk = {
+        name: 'milk',
+        cost:10
+    }
+    let chicken = {
+        name: 'chicken',
+        cost: 30
+    }
+    let potato = {
+        name: 'potato',
+        cost: 20
+    }
+    let onion = {
+        name: 'onion',
+        cost: 10
+    }
+    let pork = {
+        name: 'pork',
+        cost: 60
+    }
+    let farsh = {
+        name: 'farsh',
+        cost:20
+    }
+    let testo = {
+        name: 'testo',
+        cost: 5
+    }
+    let beef = {
+        name: 'beef',
+        cost: 80
+    }
+    let f=0;
+    let cena=0;
+    for (j=0;j<menu.length;j++){
+    for (f=0;f<4;f++){
+    for (i=0; i<ingr.length; i++){
 
-   
+        if (menu[j].f === ingr[i].name){
+            cena=cena+ingr[i].cost;    
+        } 
+    }
+    alert ('cena ingr = '+cena);
+    profit= menu[i].cost-cena;
+    cena = 0;
+    }
+    }
