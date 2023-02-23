@@ -81,9 +81,9 @@ for (i=0;
     for (i=0;i<menu2.length;i++){
         for (j=0;j<menu2[j].length;j++){
             for (k=0;k<ingr.length;k++){
-                if (menu2[i].ing[j]===ingr[k]){
+                if (menu2[i].ing[j]==ingr[k]){
                     cena = cena+price[k];
-                    
+                    alert("summa"+cena);
                 }
             }
         }
