@@ -109,7 +109,6 @@ for (i=0;
     for (j=0;j<menu.length;j++){
     for (f=0;f<4;f++){
     for (i=0; i<ingr.length; i++){
-
         if (menu[j].f === ingr[i].name){
             cena=cena+ingr[i].cost;    
         } 
