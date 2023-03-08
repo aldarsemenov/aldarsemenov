@@ -24,15 +24,18 @@ comparison (a,b);
     let podjarka = {
         ing:['potato','farsh','onion'],
         cost:150,
-        costPrice:0 }
+        costPrice:0, 
+        raznica:0}
     let lagman = {
         ing:['makaron','potato','beef'],
         cost:200,
-        costPrice:0}
+        costPrice:0,
+        raznica:0}
     let pizza = {
         ing:['cheese','chicken','onion','testo'],
         cost:300,
-        costPrice:0}
+        costPrice:0,
+        raznica:0}
     let menu2=[podjarka,lagman,pizza];
 
     let ingPrice ={
@@ -62,7 +65,8 @@ comparison (a,b);
                 alert('Цена блюда ='+menu2[i].costPrice);
                 let dohod=0;
                 dohod= profit (menu2[i].cost,menu2[i].costPrice);
-                alert('Доход = '+dohod);
+                menu2[i].raznica=dohod;
+                alert('Доход = '+menu2[i].raznica);
             }
         
        
