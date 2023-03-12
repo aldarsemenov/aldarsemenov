@@ -8,16 +8,17 @@ function comparison (a,b){
     }
 else{
     if (a<b){
-        alert('Наименьшее число а = '+a);
+        return a;
     }
     else {
-        alert('Наименьшее число b = '+b);
+        return b;
     };
 }
 }
 let a = prompt ('Первое число a');
 let b = prompt ('Второе число b');
 comparison (a,b);
+alert('Наименьшее число = '+comparison(a,b));
 
 
 //2 zadanie
