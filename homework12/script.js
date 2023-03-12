@@ -15,27 +15,36 @@
     let menu2=[podjarka,lagman,pizza];
     let ingr = ['makaron','cheese','milk','chicken','potato','onion','pork','farsh','testo','beef'];
     let price= [10,20,10,30,20,10,60,20,5,80];
-    profit=0;
-    let cena=0;
-    let MainMenu= '';
+    let ingPrice ={
+        makaron:10,
+        cheese:20,
+        milk:10,
+        chicken:30,
+        potato:20,
+        onion:10,
+        pork:60,
+        farsh:20,
+        testo:5,
+        beef:80
+    }
+  
+
+    let mainMenu= '';
     for (i=0;i<menu2.length;i++){
+        let profit=0;
+        let cena=0;
         for (j=0;j<menu2[i].ing.length;j++){
-            for (k=0;k<ingr.length;k++){
-                if (menu2[i].ing[j]==ingr[k]){
-                    cena = cena+price[k];
-                }
-            }
+             cena = cena+ingPrice[menu2[i].ing[j]];
         }
         //alert('Цена блюда = '+cena);
         profit= menu2[i].cost-cena;
         //alert('Цена прибыли ='+profit);
         let bluda='';
         bluda= `Название : ${menu2[i].name} \n Цена: ${menu2[i].cost}\n`;
-       MainMenu+= bluda;
-        cena=0;
-        profit=0;
+       mainMenu+= bluda;
+        
     }
-    alert(MainMenu);
+    alert(mainMenu);
    
    
    
