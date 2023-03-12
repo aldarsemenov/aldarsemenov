@@ -12,7 +12,7 @@ else{
     }
     else {
         return b;
-    };
+    }
 }
 }
 let a = prompt ('Первое число a');
