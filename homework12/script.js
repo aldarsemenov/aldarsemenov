@@ -31,13 +31,13 @@
 
     let mainMenu= '';
     for (i=0;i<menu2.length;i++){
-        let profit=0;
+        
         let cena=0;
         for (j=0;j<menu2[i].ing.length;j++){
              cena = cena+ingPrice[menu2[i].ing[j]];
         }
         //alert('Цена блюда = '+cena);
-        profit= menu2[i].cost-cena;
+        let profit= menu2[i].cost-cena;
         //alert('Цена прибыли ='+profit);
         let bluda='';
         bluda= `Название : ${menu2[i].name} \n Цена: ${menu2[i].cost}\n`;
