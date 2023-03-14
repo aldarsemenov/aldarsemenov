@@ -1,77 +1,35 @@
-//1 zadanie
+let login = prompt ('Введите логин');
+let password = prompt ('Введите пароль');
+let a=0;
 
-
-function comparison (a,b){
-   
-
-    if (a<b){
-        return a;
+let database = {
+    admin:'root',
+    user:'123'}
+let dlina=Object.keys(database).length; //считает количество ключей в обьекте
+    for (let i=0;i<dlina; i++)
+    { 
+        let users=Object.keys(database); //конвертирует ключи обьекта в массив
+        let pwrd=Object.values(database);//конвертирует значения в массив
+        if ((login==users[i])&&(password==pwrd[i]))
+        { alert('Вы вошли');
+        break;
+        }
+        if ((login==users[i])&&(password!=pwrd[i]))
+        { alert('Неверный пароль');
+        break;
+        }
+        if (login!=users[i])
+        {
+            a=a+1;
+        }
     }
-    else {
-        return b;
+    if (a==dlina)
+    {
+        alert('Такого пользователя не существует')
     }
-}
+    //alert(database.admin);
 
-let a = prompt ('Первое число a');
-let b = prompt ('Второе число b');
-if (a==b){
-    alert('Вы ввели одинаковые значения! ');
-}
-else{
-comparison (a,b);
-alert('Наименьшее число = '+comparison(a,b));
-}
 
-//2 zadanie
-    let podjarka = {
-        ing:['potato','farsh','onion'],
-        cost:150,
-        costPrice:0, 
-        raznica:0}
-    let lagman = {
-        ing:['makaron','potato','beef'],
-        cost:200,
-        costPrice:0,
-        raznica:0}
-    let pizza = {
-        ing:['cheese','chicken','onion','testo'],
-        cost:300,
-        costPrice:0,
-        raznica:0}
-    let menu2=[podjarka,lagman,pizza];
-
-    let ingPrice ={
-        makaron:10,
-        cheese:20,
-        milk:10,
-        chicken:30,
-        potato:20,
-        onion:10,
-        pork:60,
-        farsh:20,
-        testo:5,
-        beef:80
-    }
-   
-   function profit (a,b) {
-    return a-b;
-   }
-
-    for (i=0;i<menu2.length;i++){
-        let cena=0;
-        for (j=0;j<menu2[i].ing.length;j++){
-                cena = cena+ingPrice[menu2[i].ing[j]];
-                }
-                menu2[i].costPrice=cena;
-                cena=0;
-                alert('Цена блюда ='+menu2[i].costPrice);
-                let dohod=0;
-                dohod= profit (menu2[i].cost,menu2[i].costPrice);
-                menu2[i].raznica=dohod;
-                alert('Доход = '+menu2[i].raznica);
-            }
-        
-       
-        
-        
+  
+    
     
