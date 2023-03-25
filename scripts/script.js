@@ -1,4 +1,4 @@
-import { comparison } from './comparison.js'
+import { comparison } from './comparison.js';
 import { profit } from './profit.js';
 
 let a = prompt ('Первое число a');
