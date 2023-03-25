@@ -25,13 +25,14 @@ let database = {
   //      }
   //  }
   //  if (a==dlina)
-  //  {
+ //   {
   //      alert('Такого пользователя не существует')
   //  }
     //alert(database.admin);
 
-  //  alert(database.login);
+   // alert(database.login);
 
+   
   //  if (database[login])
  //   {
         
@@ -47,17 +48,20 @@ let database = {
  //   {
  //       alert('Такого пользователя не существует')
  //   }
- if (database[login]==password&&database[login])
- {
-     alert('Вы вошли')
- }
-if (database[login]&&database[login]!=password){
- alert('Неверный пароль');
-}
-if (database[login]==undefined)
-{
- alert('Такого пользователя не существует')
-}
+
+    
+   if (database[login]==password&&database[login])
+   {
+       alert('Вы вошли')
+   }
+  if (database[login]&&database[login]!=password){
+   alert('Неверный пароль');
+  }
+  if (database[login]==undefined)
+  {
+   alert('Такого пользователя не существует')
+  }
+    
 
   
     
