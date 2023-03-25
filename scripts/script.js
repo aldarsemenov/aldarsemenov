@@ -44,9 +44,9 @@ alert('Наименьшее число = '+comparison(a,b));
    
    
 
-    for (i=0;i<menu2.length;i++){
+    for (let i=0;i<menu2.length;i++){
         let cena=0;
-        for (j=0;j<menu2[i].ing.length;j++){
+        for (let j=0;j<menu2[i].ing.length;j++){
                 cena = cena+ingPrice[menu2[i].ing[j]];
                 }
                 menu2[i].costPrice=cena;
