@@ -3,31 +3,31 @@ let podjarka = {
     ing:['potato','farsh','onion'],
     cost:150, 
     costPrice:0,
-    vegan:'false'}
+    vegan:false}
 let lagman = {
     name:'Лагман',
     ing:['makaron','potato','beef'],
     cost:200, 
     costPrice:0,
-    vegan:'false'}
+    vegan:false}
 let pizza = {
     name:'Пицца',
     ing:['cheese','chicken','onion','testo'],
     cost:300, 
     costPrice:0,
-    vegan:'false'}
+    vegan:false}
 let salat = {
     name:'Овощной салат',
     ing:['tomato','cucumber'],
     cost:60,
     costPrice:0,
-    vegan:'true'}
+    vegan:true}
 let veganKotleti={
     name:'Капустные котлеты',
     ing:['cabbage','onion'],
     cost:90,
     costPrice:0,
-    vegan:'true'}
+    vegan:true}
 let menu2=[podjarka,lagman,pizza,salat,veganKotleti];
 
 let ingPrice ={
@@ -51,17 +51,13 @@ let ingPrice ={
 //1 zadanie
 
 console.log("1 задание\n");
-menu2.forEach(function (item, index, arr) {
-    let costPrice = menu2[index]['ing'].reduce(function (sum, item, index) {
+menu2.forEach(function (item) {
+    let costPrice = item.ing.reduce(function (sum, item) {
         return sum + ingPrice[item];
     }, 0);
-    menu2[index]['costPrice'] = costPrice 
-  
+    console.log(`Наименование ${item.name}: Себестоимость  ${costPrice}`)  
 });
 
-menu2.forEach(function (item, index, arr) {
-    return console.log(`Наименование ${menu2[index]['name']}: Себестоимость  ${menu2[index]['costPrice']}`)
-},0);
 
 
 
@@ -69,29 +65,29 @@ menu2.forEach(function (item, index, arr) {
 //2 zadanie  Используйте `map` , чтобы получить массив только с названием и стоимостью каждого блюда.
 console.log("2 задание\n");
 
-let priceName = menu2.map(function(item, index, arr) {
-   return `${menu2[index]['name']} : ${menu2[index]['cost']}`;});
+let priceName = menu2.map(function(item) {
+   return `${item.name} : ${item.cost}`;});
 console.log(priceName);
 
 
 //3.Определите, есть ли в меню хоть одно вегетарианское блюдо, используя `some`.
 console.log("3 задание\n");
 
-let veganEat = menu2.some(function(item, index, arr) {
-    return  menu2[index]['vegan']=='true' ;
+let veganEat = menu2.some(function(index) {
+    return  index.vegan==true ;
   });
   console.log(veganEat)
  
 //4.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
 console.log("4 задание\n");
-let allVeganEat = menu2.every(function(item, index, arr) {
-    return  menu2[index]['vegan']=='true' ;
+let allVeganEat = menu2.every(function(index) {
+    return  index.vegan==true ;
   });
   console.log(allVeganEat);
 
 //5.Создайте массив с вегетарианскими блюдами с помощью filter.
-
-let veganMenu = menu2.filter(function(item, index, arr) {
-    return  menu2[index]['vegan']=='true' ;
+console.log("5 задание\n");
+let veganMenu = menu2.filter(function( index) {
+    return  index.vegan==true ;
   });
   console.log(veganMenu);
