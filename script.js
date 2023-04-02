@@ -3,31 +3,31 @@ let podjarka = {
     ing:['potato','farsh','onion'],
     cost:150, 
     costPrice:0,
-    vegan:false}
+    vegan:Boolean}
 let lagman = {
     name:'Лагман',
     ing:['makaron','potato','beef'],
     cost:200, 
     costPrice:0,
-    vegan:false}
+    vegan:Boolean}
 let pizza = {
     name:'Пицца',
     ing:['cheese','chicken','onion','testo'],
     cost:300, 
     costPrice:0,
-    vegan:false}
+    vegan:Boolean}
 let salat = {
     name:'Овощной салат',
     ing:['tomato','cucumber'],
     cost:60,
     costPrice:0,
-    vegan:true}
+    vegan:Boolean}
 let veganKotleti={
     name:'Капустные котлеты',
     ing:['cabbage','onion'],
     cost:90,
     costPrice:0,
-    vegan:true}
+    vegan:Boolean}
 let menu2=[podjarka,lagman,pizza,salat,veganKotleti];
 
 let ingPrice ={
@@ -45,6 +45,8 @@ let ingPrice ={
     cucumber:10,
     cabbage:15
 }
+
+let ingNonVegan=['chicken','pork','farsh','beef'];
 
 
 
@@ -71,12 +73,29 @@ console.log(priceName);
 
 
 //3.Определите, есть ли в меню хоть одно вегетарианское блюдо, используя `some`.
+
+
+ 
+menu2.forEach(function(item){                       // перебором добавил в обьект блюда параметр что вегетарианское блюда или нет
+    let veganEat1=   item.ing.some(function(item){
+           if (ingNonVegan.includes(item)) {
+               return true
+           }
+           else return false
+       });
+       item.vegan=!veganEat1;
+   });
+
+   
+
 console.log("3 задание\n");
 
 let veganEat = menu2.some(function(index) {
     return  index.vegan==true ;
   });
   console.log(veganEat)
+
+
  
 //4.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
 console.log("4 задание\n");
