@@ -1,10 +1,10 @@
-let login = prompt ('Введите логин');
-let password = prompt ('Введите пароль');
+let login = prompt ("Введите логин");
+let password = prompt ("Введите пароль");
 let a=0;
 
 let database = {
-    admin:'root',
-    user:'123'}
+    admin:"root",
+    user:"123"}
 
   //  let dlina=Object.keys(database).length; //считает количество ключей в обьекте
   //  for (let i=0;i<dlina; i++)
@@ -12,11 +12,11 @@ let database = {
    //     let users=Object.keys(database); //конвертирует ключи обьекта в массив
    //     let pwrd=Object.values(database);//конвертирует значения в массив
    //     if ((login==users[i])&&(password==pwrd[i]))
-  //      { alert('Вы вошли');
+  //      { alert("Вы вошли");
   //      break;
   //      }
   //      if ((login==users[i])&&(password!=pwrd[i]))
-  //      { alert('Неверный пароль');
+  //      { alert("Неверный пароль");
   //      break;
   //      }
    //     if (login!=users[i])
@@ -26,7 +26,7 @@ let database = {
   //  }
   //  if (a==dlina)
  //   {
-  //      alert('Такого пользователя не существует')
+  //      alert("Такого пользователя не существует")
   //  }
     //alert(database.admin);
 
@@ -38,28 +38,28 @@ let database = {
         
  //   if (database[login]==password)
  //   {
- //       alert('Вы вошли')
+ //       alert("Вы вошли")
  //   }
   //  else {
- //       alert('Неверный пароль');
+ //       alert("Неверный пароль");
  //   }
 //}
 //    else 
  //   {
- //       alert('Такого пользователя не существует')
+ //       alert("Такого пользователя не существует")
  //   }
 
     
    if (database[login]==password&&database[login])
    {
-       alert('Вы вошли')
+       alert("Вы вошли")
    }
   if (database[login]&&database[login]!=password){
-   alert('Неверный пароль');
+   alert("Неверный пароль");
   }
   if (database[login]==undefined)
   {
-   alert('Такого пользователя не существует')
+   alert("Такого пользователя не существует")
   }
     
 

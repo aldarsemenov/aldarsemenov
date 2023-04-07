@@ -1,19 +1,19 @@
 
    
     let podjarka = {
-        name: 'Поджарка',
-        ing:['potato','farsh','onion'],
+        name: "Поджарка",
+        ing:["potato","farsh","onion"],
         cost:150 }
     let lagman = {
-        name:'Лагман',
-        ing:['makaron','potato','beef'],
+        name:"Лагман",
+        ing:["makaron","potato","beef"],
         cost:200}
     let pizza = {
-        name:'Пицца',
-        ing:['cheese','chicken','onion','testo'],
+        name:"Пицца",
+        ing:["cheese","chicken","onion","testo"],
         cost:300}
     let menu2=[podjarka,lagman,pizza];
-    let ingr = ['makaron','cheese','milk','chicken','potato','onion','pork','farsh','testo','beef'];
+    let ingr = ["makaron","cheese","milk","chicken","potato","onion","pork","farsh","testo","beef"];
     let price= [10,20,10,30,20,10,60,20,5,80];
     let ingPrice ={
         makaron:10,
@@ -29,17 +29,17 @@
     }
   
 
-    let mainMenu= '';
+    let mainMenu= "";
     for (i=0;i<menu2.length;i++){
         
         let cena=0;
         for (j=0;j<menu2[i].ing.length;j++){
              cena = cena+ingPrice[menu2[i].ing[j]];
         }
-        //alert('Цена блюда = '+cena);
+        //alert("Цена блюда = "+cena);
         let profit= menu2[i].cost-cena;
-        //alert('Цена прибыли ='+profit);
-        let bluda='';
+        //alert("Цена прибыли ="+profit);
+        let bluda="";
         bluda= `Название : ${menu2[i].name} \n Цена: ${menu2[i].cost}\n`;
        mainMenu+= bluda;
         

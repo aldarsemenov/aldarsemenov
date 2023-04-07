@@ -1,28 +1,28 @@
 let pasta = {
-    ing1: 'makaron',
-    ing2: 'cheese',
-    ing3: 'milk',
-    ing4:'chicken',
+    ing1: "makaron",
+    ing2: "cheese",
+    ing3: "milk",
+    ing4:"chicken",
     costPrice:70, //себестоимость
     cost: 180      //цена
 }
 let zharexa = {   
      //жареха
-     ing1: 'potato',
-     ing2: 'onion',
-     ing3: 'pork',
+     ing1: "potato",
+     ing2: "onion",
+     ing3: "pork",
     costPrice:90,
     cost: 190
 }
 let  booza ={
-    ing1: 'farsh',
-    int2: 'testo',
+    ing1: "farsh",
+    int2: "testo",
     costPrice: 25,
     cost: 55
 }
 let buchler  = {  //бухлер
-    ing1: 'beef',
-    ing2: 'potato',
+    ing1: "beef",
+    ing2: "potato",
     costPrice: 100,
     cost: 230
 }

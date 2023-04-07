@@ -1,34 +1,34 @@
 let podjarka = {
-    name: 'Поджарка',
-    ing: ['potato', 'farsh', 'onion'],
+    name: "Поджарка",
+    ing: ["potato", "farsh", "onion"],
     cost: 150,
     costPrice: 0,
     vegan: Boolean
 }
 let lagman = {
-    name: 'Лагман',
-    ing: ['makaron', 'potato', 'beef'],
+    name: "Лагман",
+    ing: ["makaron", "potato", "beef"],
     cost: 200,
     costPrice: 0,
     vegan: Boolean
 }
 let pizza = {
-    name: 'Пицца',
-    ing: ['cheese', 'chicken', 'onion', 'testo'],
+    name: "Пицца",
+    ing: ["cheese", "chicken", "onion", "testo"],
     cost: 300,
     costPrice: 0,
     vegan: Boolean
 }
 let salat = {
-    name: 'Овощной салат',
-    ing: ['tomato', 'cucumber'],
+    name: "Овощной салат",
+    ing: ["tomato", "cucumber"],
     cost: 60,
     costPrice: 0,
     vegan: Boolean
 }
 let veganKotleti = {
-    name: 'Капустные котлеты',
-    ing: ['cabbage', 'onion'],
+    name: "Капустные котлеты",
+    ing: ["cabbage", "onion"],
     cost: 90,
     costPrice: 0,
     vegan: Boolean
@@ -51,7 +51,7 @@ let ingPrice = {
     cabbage: 15
 }
 
-let ingNonVegan = ['chicken', 'pork', 'farsh', 'beef'];
+let ingNonVegan = ["chicken", "pork", "farsh", "beef"];
 
 
 

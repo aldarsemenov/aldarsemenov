@@ -12,29 +12,29 @@ function comparison (a,b){
     }
 }
 
-let a = prompt ('Первое число a');
-let b = prompt ('Второе число b');
+let a = prompt ("Первое число a");
+let b = prompt ("Второе число b");
 if (a==b){
-    alert('Вы ввели одинаковые значения! ');
+    alert("Вы ввели одинаковые значения! ");
 }
 else{
 comparison (a,b);
-alert('Наименьшее число = '+comparison(a,b));
+alert("Наименьшее число = "+comparison(a,b));
 }
 
 //2 zadanie
     let podjarka = {
-        ing:['potato','farsh','onion'],
+        ing:["potato","farsh","onion"],
         cost:150,
         costPrice:0, 
         raznica:0}
     let lagman = {
-        ing:['makaron','potato','beef'],
+        ing:["makaron","potato","beef"],
         cost:200,
         costPrice:0,
         raznica:0}
     let pizza = {
-        ing:['cheese','chicken','onion','testo'],
+        ing:["cheese","chicken","onion","testo"],
         cost:300,
         costPrice:0,
         raznica:0}
@@ -64,11 +64,11 @@ alert('Наименьшее число = '+comparison(a,b));
                 }
                 menu2[i].costPrice=cena;
                 cena=0;
-                alert('Цена блюда ='+menu2[i].costPrice);
+                alert("Цена блюда ="+menu2[i].costPrice);
                 let dohod=0;
                 dohod= profit (menu2[i].cost,menu2[i].costPrice);
                 menu2[i].raznica=dohod;
-                alert('Доход = '+menu2[i].raznica);
+                alert("Доход = "+menu2[i].raznica);
             }
         
        
