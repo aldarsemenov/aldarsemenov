@@ -1,55 +1,18 @@
-let podjarka = {
-    name: 'Поджарка',
-    ing: ['potato', 'farsh', 'onion'],
-    cost: 150,
-    costPrice: 0,
-    vegan: Boolean
-}
-let lagman = {
-    name: 'Лагман',
-    ing: ['makaron', 'potato', 'beef'],
-    cost: 200,
-    costPrice: 0,
-    vegan: Boolean
-}
-let pizza = {
-    name: 'Пицца',
-    ing: ['cheese', 'chicken', 'onion', 'testo'],
-    cost: 300,
-    costPrice: 0,
-    vegan: Boolean
-}
-let salat = {
-    name: 'Овощной салат',
-    ing: ['tomato', 'cucumber'],
-    cost: 60,
-    costPrice: 0,
-    vegan: Boolean
-}
-let veganKotleti = {
-    name: 'Капустные котлеты',
-    ing: ['cabbage', 'onion'],
-    cost: 90,
-    costPrice: 0,
-    vegan: Boolean
-}
-let menu2 = [podjarka, lagman, pizza, salat, veganKotleti];
+let menu2 = [];
+let ingPrice;
 
-let ingPrice = {
-    makaron: 10,
-    cheese: 20,
-    milk: 10,
-    chicken: 30,
-    potato: 20,
-    onion: 10,
-    pork: 60,
-    farsh: 20,
-    testo: 5,
-    beef: 80,
-    tomato: 10,
-    cucumber: 10,
-    cabbage: 15
-}
+fetch("/menu.json")
+.then((r) => r.json())
+.then((r) => {
+menu2=r;
+return fetch("/cost.json");
+})
+.then((r)=> r.json())
+.then((r)=>{
+    ingPrice=r;
+    console.log(menu2)
+    console.log(ingPrice)
+
 
 let ingNonVegan = ['chicken', 'pork', 'farsh', 'beef'];
 
@@ -116,3 +79,4 @@ let veganMenu = menu2.filter(function (index) {
     return !veganEat1;
 });
 console.log(veganMenu);
+} );
