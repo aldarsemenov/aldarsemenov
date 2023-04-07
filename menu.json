@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Поджарка",
+        "ing": "['potato', 'farsh', 'onion']",
+        "cost": 150,
+        "costPrice": 0,
+        "vegan": ""
+    },
+    {
+        "name": "Лагман",
+        "ing": "['makaron', 'potato', 'beef']",
+        "cost": 200,
+        "costPrice": 0,
+        "vegan": ""
+    },
+    {
+        "name": "Пицца",
+        "ing": "['cheese', 'chicken', 'onion', 'testo']",
+        "cost": 300,
+        "costPrice": 0,
+        "vegan": ""
+    },
+    {
+        "name": "Овощной салат",
+        "ing": "['tomato', 'cucumber']",
+        "cost": 60,
+        "costPrice": 0,
+        "vegan": ""
+    },
+    {
+        "name": "Капустные котлеты",
+        "ing": "['cabbage', 'onion']",
+        "cost": 90,
+        "costPrice": 0,
+        "vegan": ""
+    }
+]
