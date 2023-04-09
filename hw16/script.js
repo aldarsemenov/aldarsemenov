@@ -3,35 +3,35 @@ let podjarka = {
     ing: ["potato", "farsh", "onion"],
     cost: 150,
     costPrice: 0,
-    vegan: Boolean
+    vegan: ""
 }
 let lagman = {
     name: "Лагман",
     ing: ["makaron", "potato", "beef"],
     cost: 200,
     costPrice: 0,
-    vegan: Boolean
+    vegan: ""
 }
 let pizza = {
     name: "Пицца",
     ing: ["cheese", "chicken", "onion", "testo"],
     cost: 300,
     costPrice: 0,
-    vegan: Boolean
+    vegan: ""
 }
 let salat = {
     name: "Овощной салат",
     ing: ["tomato", "cucumber"],
     cost: 60,
     costPrice: 0,
-    vegan: Boolean
+    vegan: ""
 }
 let veganKotleti = {
     name: "Капустные котлеты",
     ing: ["cabbage", "onion"],
     cost: 90,
     costPrice: 0,
-    vegan: Boolean
+    vegan: ""
 }
 let menu2 = [podjarka, lagman, pizza, salat, veganKotleti];
 
