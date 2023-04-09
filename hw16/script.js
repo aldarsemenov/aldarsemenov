@@ -83,18 +83,18 @@ console.log(priceName);
 
 //function которая выводит true если есть не веган ингредиенты
 let veganEat1;
-function chechNonVeganFood(item) {
+function checkNonVeganFood(item) {
     veganEat1 = item.ing.some(function (item) {
         return ingNonVegan.includes(item)
 
     })
+    return veganEat1
 }
 
 console.log("3 задание\n");
 
 let veganEat = menu2.some(function (item) {
-    chechNonVeganFood(item)
-    return !veganEat1;
+    return !checkNonVeganFood(item);
 })
 
 console.log(veganEat)
@@ -104,15 +104,15 @@ console.log(veganEat)
 //4.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
 console.log("4 задание\n");
 let allVeganEat = menu2.every(function (item) {
-    chechNonVeganFood(item)
-    return !veganEat1;
+    return !checkNonVeganFood(item)
+
 });
 console.log(allVeganEat);
 
 //5.Создайте массив с вегетарианскими блюдами с помощью filter.
 console.log("5 задание\n");
 let veganMenu = menu2.filter(function (item) {
-    chechNonVeganFood(item)
-    return !veganEat1;
+    return !checkNonVeganFood(item)
+
 });
 console.log(veganMenu);
