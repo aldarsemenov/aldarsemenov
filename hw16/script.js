@@ -82,9 +82,9 @@ console.log(priceName);
 
 
 //function которая выводит true если есть не веган ингредиенты
-let veganEat1;
+
 function checkNonVeganFood(item) {
-    veganEat1 = item.ing.some(function (item) {
+    let veganEat1 = item.ing.some(function (item) {
         return ingNonVegan.includes(item)
 
     })
