@@ -8,7 +8,7 @@ let ingPrice;
 //     console.log(menu2)
 //     console.log(ingPrice)
 //     let ingNonVegan = ["chicken", "pork", "farsh", "beef"];
-   
+
 //     //1 zadanie
 //     console.log("1 задание\n");
 //     menu2.forEach(function (item) {
@@ -65,18 +65,18 @@ let ingPrice;
 
 
 
-async function addMenu(){
+async function addMenu() {
 
 
-  await  Promise.all ([
-    fetch("/menu.json").then((r)=>r.json()),
-    fetch("/cost.json").then((r)=>r.json())
-])
-.then(([menu2,ingPrice])=>{
-
+    let menuAndIngPrice = await Promise.all([
+        fetch("/menu.json").then((r) => r.json()).then((r)=>{menu2=r}),
+        fetch("/cost.json").then((r) => r.json()).then((r)=>{ingPrice=r})
+    ])
+{
+    
 
     let ingNonVegan = ["chicken", "pork", "farsh", "beef"];
-   
+
     //1 zadanie
     console.log("1 задание\n");
     menu2.forEach(function (item) {
@@ -126,11 +126,11 @@ async function addMenu(){
         return !veganEat1;
     });
     console.log(veganMenu);
-     
 
 
 
-})
 }
+}
+
 
 addMenu();
