@@ -1,5 +1,4 @@
-let menu2 = [];
-let ingPrice;
+
 // async function addMenu() {
 //     let ad = await fetch("/menu.json");
 //     let cost = await fetch("/cost.json");
@@ -68,9 +67,9 @@ let ingPrice;
 async function addMenu() {
 
 
-    let menuAndIngPrice = await Promise.all([
-        fetch("/menu.json").then((r) => r.json()).then((r)=>{menu2=r}),
-        fetch("/cost.json").then((r) => r.json()).then((r)=>{ingPrice=r})
+  let [menu2,ingPrice]=  await Promise.all([
+        fetch("/menu.json").then((r) => r.json()),
+        fetch("/cost.json").then((r) => r.json())
     ])
 {
     
