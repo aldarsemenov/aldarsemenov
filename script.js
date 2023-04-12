@@ -29,31 +29,31 @@
 //     //3.Определите, есть ли в меню хоть одно вегетарианское блюдо, используя `some`.
 //     //function которая выводит true если есть не веган ингредиенты
 //     let veganEat1;
-//     function veganOrNot(index) {
-//         veganEat1 = index.ing.some(function (item) {
+//     function veganOrNot(item) {
+//         veganEat1 = item.ing.some(function (item) {
 //             return ingNonVegan.includes(item)
 
 //         })
 //     }
 //     console.log("3 задание\n");
-//     let veganEat = menu2.some(function (index) {
-//         veganOrNot(index)
+//     let veganEat = menu2.some(function (item) {
+//         veganOrNot(item)
 //         return !veganEat1;
 //     })
 //     console.log(veganEat)
 
 //     //4.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
 //     console.log("4 задание\n");
-//     let allVeganEat = menu2.every(function (index) {
-//         veganOrNot(index)
+//     let allVeganEat = menu2.every(function (item) {
+//         veganOrNot(item)
 //         return !veganEat1;
 //     });
 //     console.log(allVeganEat);
 
 //     //5.Создайте массив с вегетарианскими блюдами с помощью filter.
 //     console.log("5 задание\n");
-//     let veganMenu = menu2.filter(function (index) {
-//         veganOrNot(index)
+//     let veganMenu = menu2.filter(function (item) {
+//         veganOrNot(item)
 //         return !veganEat1;
 //     });
 //     console.log(veganMenu);
@@ -97,31 +97,31 @@ async function addMenu() {
     //3.Определите, есть ли в меню хоть одно вегетарианское блюдо, используя `some`.
     //function которая выводит true если есть не веган ингредиенты
     let veganEat1;
-    function veganOrNot(index) {
-        veganEat1 = index.ing.some(function (item) {
+    function veganOrNot(item) {
+        veganEat1 = item.ing.some(function (item) {
             return ingNonVegan.includes(item)
 
         })
     }
     console.log("3 задание\n");
-    let veganEat = menu2.some(function (index) {
-        veganOrNot(index)
+    let veganEat = menu2.some(function (item) {
+        veganOrNot(item)
         return !veganEat1;
     })
     console.log(veganEat)
 
     //4.Определите, полностью ли у вас вегетарианское меню с помощью `every`.
     console.log("4 задание\n");
-    let allVeganEat = menu2.every(function (index) {
-        veganOrNot(index)
+    let allVeganEat = menu2.every(function (item) {
+        veganOrNot(item)
         return !veganEat1;
     });
     console.log(allVeganEat);
 
     //5.Создайте массив с вегетарианскими блюдами с помощью filter.
     console.log("5 задание\n");
-    let veganMenu = menu2.filter(function (index) {
-        veganOrNot(index)
+    let veganMenu = menu2.filter(function (item) {
+        veganOrNot(item)
         return !veganEat1;
     });
     console.log(veganMenu);
